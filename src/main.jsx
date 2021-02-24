@@ -105,7 +105,7 @@ const DEFAULT_LABEL_PLACEHOLDER = "Click To Edit";
         const labelText = this.isTextValueValid() ? this.state.text : (this.props.labelPlaceHolder || DEFAULT_LABEL_PLACEHOLDER);
         return <div>
             <label className={this.props.labelClassName}
-                onClick={this.handleFocus}
+                onDoubleClick={this.handleFocus}
                 style={{
                 	fontSize: this.props.labelFontSize,
                     fontWeight: this.props.labelFontWeight,
